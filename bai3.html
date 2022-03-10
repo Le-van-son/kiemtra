@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input</title>
+</head>
+<body>
+<p id="theh">ketqua1</p>
+<p id="theh2">ketqua2</p>
+<p id="theh3">ketqua3</p>
+<p id="theh4">ketqua4</p>
+<p id="theh5">ketqua5</p>
+
+
+
+<input type="text" id="nhap1"><br>
+<input type="text" id="nhap2"><br>
+
+<button onclick="bam()"> bam di</button>
+<script>
+    let a=document.getElementById('nhap1');
+    let b=document.getElementById('nhap2');
+
+    function bam() {
+        let cv = a.value*4
+        let s = a.value*a.value
+        let bp= a.value*a.value
+        let theki= parseInt(a.value/100+1)
+        let tong= ((a.value+b.value)*5/2);
+        document.getElementById('theh').innerHTML=('chu vi = '+cv)
+        document.getElementById('theh2').innerHTML=('dt = '+s)
+        document.getElementById('theh3').innerHTML=('binh phuong = '+bp)
+        document.getElementById('theh4').innerHTML=('the ki = '+theki)
+        document.getElementById('theh5').innerHTML=('tong = '+tong)
+
+
+
+    }
+</script>
+
+</body>
+</html>
